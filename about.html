@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- barba.js import-->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <!-- gsap.js import-->
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <!-- tailwind.js import-->
+        <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+        <!--Google font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+            rel="stylesheet">
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- step.css import-->
+        <link href="./css/step.css" rel="stylesheet">
+        <!-- about.css import-->
+        <link href="./css/about.css" rel="stylesheet">
+
+        <title>About</title>
+    </head>
+    <body data-barba="wrapper">
+        <!--The transition of step :start-->
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--The transition of step :end-->
+
+        <!--Main container :start-->
+        <div id="main" data-barba="container" data-barba-namespace="home">
+            <!--Navigation :start-->
+            <aside id="nav_aside" class="p-12">
+                <nav class="flex items-center justify-between flex-wrap
+                    bg-teal-500">
+                    <div class="flex items-center flex-shrink-0 text-white
+                        mr-6">
+
+                        <span  class="nav_text font-bold text-2xl
+                            tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
+                            218); cursor: pointer;"> <a href="./index.html">山乇乃 ᗪ乇ᐯ</a>
+                        </span>
+
+                    </div>
+                    <div class="block lg:hidden">
+                        <button class="flex items-center px-3 py-2 border
+                            rounded text-white border-teal-400">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0
+                                20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
+                                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0
+                                    6h20v2H0v-2z" /></svg>
+                            </button>
+                        </div>
+                        <div id="nav_items" class="w-full block flex-grow
+                            lg:flex
+                            lg:items-center lg:w-auto">
+                            <div class="text-sm lg:flex-grow">
+                                <a href="./about.html" class=" nav_text block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    About
+                                </a>
+                                <a href="#responsive-header" class="nav_text block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Skills
+                                </a>
+                                <a href="#responsive-header" class="nav_text block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Work
+                                </a>
+                                <a href="#responsive-header" class="nav_text block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+                <!--Navigation :end-->
+                <!--Main container :start-->
+                <main>
+                    
+                </main>
+                <!--Main container :end-->
+
+            </div>
+            <!--Main container :end-->
+
+            <!-- about.js import-->
+            <script src="./js/about.js"></script>
+        </body>
+    </html>

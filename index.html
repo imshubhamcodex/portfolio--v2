@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- barba.js import-->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <!-- gsap.js import-->
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <!-- tailwind.js import-->
+        <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+        <!--Google font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+            rel="stylesheet">
+        <!--Fontawesome icon-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- step.css import-->
+        <link href="./css/step.css" rel="stylesheet">
+        <!-- index.css import-->
+        <link href="./css/index.css" rel="stylesheet">
+
+        <title>Home</title>
+    </head>
+    <body data-barba="wrapper">
+        <!--The transition of step :start-->
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--The transition of step :end-->
+
+        <!--Container :start-->
+        <div id="main" data-barba="container" data-barba-namespace="home">
+            <div id="mobile_nav_bar">
+                <div class="flex justify-around">
+                    <div class="flex-1 pl-4 pt-4">
+                        <h2 class="text-white text-2xl" style="color: #00ffd3;">Logo</h2>
+                    </div>
+                    <div class="flex-2 pr-4 pt-4" onclick="toggleNav()">
+                        <i id="bar_icon" class="fa fa-bars text-white text-2xl"
+                            style="font-size: 30px;"></i>
+                    </div>
+                </div>
+
+                <div class="load-container">
+                    <div class="loading-screen"></div>
+                </div>
+                <div class="load-container_0">
+                    <div class="loading-screen_0"></div>
+                </div>
+            </div>
+
+            <!--Navigation :start-->
+            <aside id="nav_aside" class="p-12">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <div class="flex items-center flex-shrink-0 text-white
+                        mr-6">
+
+                        <span class="nav_text font-bold text-2xl
+                            tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
+                            218); cursor: pointer;"> Logo
+                        </span>
+
+                    </div>
+                    <div class="block lg:hidden">
+                        <button class="flex items-center px-3 py-2 border
+                            rounded text-white border-teal-400">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0
+                                20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
+                                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0
+                                    6h20v2H0v-2z" /></svg>
+                            </button>
+                        </div>
+                        <div id="nav_items" class="w-full block flex-grow
+                            lg:flex
+                            lg:items-center lg:w-auto">
+                            <div class="text-sm lg:flex-grow">
+                                <a href="./about.html" class="nav_text block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    About
+                                </a>
+                                <a href="#responsive-header" class="nav_text
+                                    block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Skills
+                                </a>
+                                <a href="#responsive-header" class="nav_text
+                                    block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Work
+                                </a>
+                                <a href="#responsive-header" class="nav_text
+                                    block
+                                    mt-4 lg:inline-block lg:mt-0
+                                    text-white mr-6">
+                                    Contact
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </aside>
+                <!--Navigation :end-->
+                <!--Main container :start-->
+                <main>
+                    <!--Circle svg :start-->
+                    <div id="wrapper">
+                        <svg class="motio-o-home" viewBox="0 0 100 100">
+                            <path class="isolation" fill="none" d="M12 50c0-21
+                                17-38
+                                38-38s38 17 38 38-17 38-38 38"></path>
+                        </svg>
+                    </div>
+                    <!--Circle svg :end-->
+
+                    <!--Intro :start-->
+                    <div id="intro" class="text-white intro_parts">
+                        <p id="hi" class="intro_parts">Hi, I am</p>
+                        <h2 id="name" class="intro_parts">Shubham Kumar</h2>
+                        <h3 id="name_sub" class="intro_parts">I build things
+                            which live on
+                            internet !</h3>
+                    </div>
+                    <!--Intro :end-->
+
+                    <!--Social media :start-->
+                    <div id="social">
+                        <div>
+                            <ul>
+                                <li><a class="flex align-items-center
+                                        text-white pb-2"><span>━━━</span><i
+                                            class="fa fa-facebook
+                                            text-white"></i></a>
+                                </li>
+                                <li><a class="flex align-items-center
+                                        text-white pb-2">━━━<i class="fa
+                                            fa-linkedin
+                                            text-white"></i></a>
+                                </li>
+                                <li><a class="flex align-items-center
+                                        text-white pb-2">━━━<i class="fa
+                                            fa-whatsapp
+                                            text-white"></i></a>
+                                </li>
+                                <li><a class="flex align-items-center
+                                        text-white">━━━<i class="fa fa-github
+                                            text-white"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Social media :end-->
+
+                    <!--Circle text :start-->
+                    <div id="bottom_text">
+                        <p class="text-white">I design intractive user
+                            experiences &
+                            beautiful interfaces
+                        </p>
+                        <br>
+                        <p id="lets_work">LET’S WORK TOGETHER <span
+                                class="text-xl pl-3 animate-pulse text-white"> ➤</span>
+                        </p>
+                    </div>
+                    <!--Circle text :end-->
+
+                </main>
+                <!--Main container :end-->
+            </div>
+            <!--Container :end-->
+
+            <!-- index.js import-->
+            <script src="./js/index.js"></script>
+        </body>
+    </html>

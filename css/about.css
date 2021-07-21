@@ -1,0 +1,23 @@
+body,
+div,
+aside {
+  font-family: "Titillium Web", sans-serif;
+  overflow: hidden;
+}
+
+#main {
+  background-color: black;
+  height: 100vh;
+}
+#nav_items a {
+  font-size: 18px;
+}
+#nav_items a:hover {
+  transform: scale(1.05);
+  color: rgb(100, 255, 218);
+  transition: all 0.1s ease-in;
+}
+
+.nav_text {
+  opacity: 0;
+}
