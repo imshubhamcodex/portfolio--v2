@@ -21,11 +21,15 @@ aside {
   opacity: 0;
 }
 
-#wrapper {
+#wrapper,
+.mobile_nav_circle {
   position: absolute;
   top: 0%;
   right: 0%;
   display: none;
+}
+.icon_mob i {
+  opacity: 0;
 }
 
 .motio-o-home {
@@ -33,6 +37,12 @@ aside {
   width: 100vh;
   stroke: #00ffd3;
   -webkit-animation: spin 0.7s 1 ease-in-out;
+}
+.motio-o-home-half {
+  height: 100vh;
+  width: 100vh;
+  stroke: #00ffd3;
+  -webkit-animation: spin-half 0.7s 1 ease-out;
 }
 
 path {
@@ -51,6 +61,7 @@ path {
   transform: translate(-10%, -30%);
 }
 
+/* Social icon Big screen :start */
 #social {
   position: absolute;
   top: 50%;
@@ -73,6 +84,7 @@ path {
 #social div ul li {
   opacity: 0;
 }
+/* Social icon Big screen :end */
 
 #hi {
   color: #00ffd3;
@@ -87,6 +99,7 @@ path {
   opacity: 0;
 }
 
+/* Text in between circle :start */
 #bottom_text {
   position: absolute;
   top: 58%;
@@ -103,7 +116,9 @@ path {
 #lets_work {
   color: #00ffd3;
 }
+/* Text in between circle :end */
 
+/* Container Loading :start */
 .loading-screen {
   position: relative;
   padding-left: 0;
@@ -143,17 +158,48 @@ path {
   z-index: 11;
   pointer-events: none;
 }
+/* Container Loading :end */
 
+/* Mobile Section :start */
 #mobile_nav_bar {
   display: none;
 }
+#mobile_nav_items {
+  width: 100vw;
+  display: none;
+}
 
+#mobile_nav_items ul li a {
+  font-size: 40px;
+}
+#mobile_nav_items ul {
+  width: 100vw;
+  text-align: left;
+}
+.mobile_nav_circle {
+  top: 75%;
+  right: 2%;
+  zoom: 0.5;
+  display: none;
+}
+/* Mobile Section :end */
+
+/* Animation Section :start */
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
+/* Mobile Nav Bottom Circle Animation :start */
+@-webkit-keyframes spin-half {
+  100% {
+    -webkit-transform: rotate(300deg);
+    transform: rotate(300deg);
+  }
+}
+/* Mobile Nav Bottom Circle Animation :end */
 
 @-webkit-keyframes scale {
   0% {
@@ -164,6 +210,7 @@ path {
     stroke-dashoffset: 0px;
   }
 }
+/* Animation Section :end */
 
 @media (max-width: 700px) {
   #wrapper {
@@ -171,6 +218,7 @@ path {
     right: 50%;
     zoom: 0.5;
   }
+
   #social {
     display: none;
   }
@@ -178,9 +226,8 @@ path {
     display: none;
   }
   #intro {
-    top: 25%;
+    top: 18%;
     left: 10%;
-    transform: translate(-10%, -50%);
   }
   #bottom_text {
     left: 10%;
@@ -192,5 +239,8 @@ path {
   }
   #mobile_nav_bar {
     display: block;
+  }
+  .motio-o-home {
+    -webkit-animation: spin 0.7s 1 ease-out;
   }
 }

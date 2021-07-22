@@ -43,10 +43,12 @@
 
         <!--Container :start-->
         <div id="main" data-barba="container" data-barba-namespace="home">
+            <!--Mobile nav bar :start-->
             <div id="mobile_nav_bar">
                 <div class="flex justify-around">
                     <div class="flex-1 pl-4 pt-4">
-                        <h2 class="text-white text-2xl" style="color: #00ffd3;">Logo</h2>
+                        <h2 id="mobile_logo" class="text-white text-2xl"
+                            style="color: #00ffd3;"><a href="./index.html">Logo</a></h2>
                     </div>
                     <div class="flex-2 pr-4 pt-4" onclick="toggleNav()">
                         <i id="bar_icon" class="fa fa-bars text-white text-2xl"
@@ -54,13 +56,63 @@
                     </div>
                 </div>
 
+                <!--Blue loading :start-->
                 <div class="load-container">
                     <div class="loading-screen"></div>
                 </div>
+                <!--Blue loading :end-->
+                <!--White loading :start-->
                 <div class="load-container_0">
                     <div class="loading-screen_0"></div>
                 </div>
+                <!--White loading :end-->
+
+                <!--Nav Box :start-->
+                <div id="mobile_nav_items">
+                    <!--Nav items :start-->
+                    <ul class="text-white pl-12">
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a>Skills</a>
+                        </li>
+                        <li>
+                            <a>Work</a>
+                        </li>
+                        <li>
+                            <a>Contact</a>
+                        </li>
+                    </ul>
+                    <!--Nav items :end-->
+                    <!--Social icons :start-->
+                    <div class="icon_mob text-2xl" style="position:
+                        absolute;bottom:0px;width: 100%;height: 200px;">
+                        <i style="position: absolute; top:100px;left:100px;
+                            z-index: 10;" class="fa fa-facebook text-white"></i>
+                        <i style="position: absolute; top:75px;left:150px;
+                            z-index: 10;" class="fa fa-linkedin text-white"></i>
+                        <i style="position: absolute; top:75px;left:210px;
+                            z-index: 10;" class="fa fa-whatsapp text-white"></i>
+                        <i style="position: absolute; top:98px;left:265px;
+                            z-index: 10;" class="fa fa-github text-white"></i>
+                    </div>
+                    <!--Social icons :end-->
+                    <!--Circle :start-->
+                    <div class="mobile_nav_circle">
+                        <svg class="motio-o-home-half" viewBox="0 0 100 100">
+                            <path class="isolation" fill="none" d="M12 50c0-21
+                                17-38
+                                38-38s38 17 38 38-17 38-38 38"></path>
+                        </svg>
+                    </div>
+                    <!--Circle :end-->
+                </div>
+                <!--Nav Box :end-->
+
             </div>
+            <!--Mobile nav bar :end-->
+
 
             <!--Navigation :start-->
             <aside id="nav_aside" class="p-12">
@@ -70,120 +122,113 @@
 
                         <span class="nav_text font-bold text-2xl
                             tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
-                            218); cursor: pointer;"> Logo
+                            218); cursor: pointer;"><a href="./index.html">Logo</a>
                         </span>
 
                     </div>
-                    <div class="block lg:hidden">
-                        <button class="flex items-center px-3 py-2 border
-                            rounded text-white border-teal-400">
-                            <svg class="fill-current h-3 w-3" viewBox="0 0
-                                20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
-                                    d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0
-                                    6h20v2H0v-2z" /></svg>
-                            </button>
-                        </div>
-                        <div id="nav_items" class="w-full block flex-grow
-                            lg:flex
-                            lg:items-center lg:w-auto">
-                            <div class="text-sm lg:flex-grow">
-                                <a href="./about.html" class="nav_text block
-                                    mt-4 lg:inline-block lg:mt-0
-                                    text-white mr-6">
-                                    About
-                                </a>
-                                <a href="#responsive-header" class="nav_text
-                                    block
-                                    mt-4 lg:inline-block lg:mt-0
-                                    text-white mr-6">
-                                    Skills
-                                </a>
-                                <a href="#responsive-header" class="nav_text
-                                    block
-                                    mt-4 lg:inline-block lg:mt-0
-                                    text-white mr-6">
-                                    Work
-                                </a>
-                                <a href="#responsive-header" class="nav_text
-                                    block
-                                    mt-4 lg:inline-block lg:mt-0
-                                    text-white mr-6">
-                                    Contact
-                                </a>
-                            </div>
-                        </div>
-                    </nav>
-                </aside>
-                <!--Navigation :end-->
-                <!--Main container :start-->
-                <main>
-                    <!--Circle svg :start-->
-                    <div id="wrapper">
-                        <svg class="motio-o-home" viewBox="0 0 100 100">
-                            <path class="isolation" fill="none" d="M12 50c0-21
-                                17-38
-                                38-38s38 17 38 38-17 38-38 38"></path>
-                        </svg>
-                    </div>
-                    <!--Circle svg :end-->
-
-                    <!--Intro :start-->
-                    <div id="intro" class="text-white intro_parts">
-                        <p id="hi" class="intro_parts">Hi, I am</p>
-                        <h2 id="name" class="intro_parts">Shubham Kumar</h2>
-                        <h3 id="name_sub" class="intro_parts">I build things
-                            which live on
-                            internet !</h3>
-                    </div>
-                    <!--Intro :end-->
-
-                    <!--Social media :start-->
-                    <div id="social">
-                        <div>
-                            <ul>
-                                <li><a class="flex align-items-center
-                                        text-white pb-2"><span>━━━</span><i
-                                            class="fa fa-facebook
-                                            text-white"></i></a>
-                                </li>
-                                <li><a class="flex align-items-center
-                                        text-white pb-2">━━━<i class="fa
-                                            fa-linkedin
-                                            text-white"></i></a>
-                                </li>
-                                <li><a class="flex align-items-center
-                                        text-white pb-2">━━━<i class="fa
-                                            fa-whatsapp
-                                            text-white"></i></a>
-                                </li>
-                                <li><a class="flex align-items-center
-                                        text-white">━━━<i class="fa fa-github
-                                            text-white"></i></a>
-                                </li>
-                            </ul>
+                    <!--Nav items :start-->
+                    <div id="nav_items" class="w-full block flex-grow
+                        lg:flex
+                        lg:items-center lg:w-auto">
+                        <div class="text-sm lg:flex-grow">
+                            <a href="./about.html" class="nav_text block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                About
+                            </a>
+                            <a href="#responsive-header" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Skills
+                            </a>
+                            <a href="#responsive-header" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Work
+                            </a>
+                            <a href="#responsive-header" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Contact
+                            </a>
                         </div>
                     </div>
-                    <!--Social media :end-->
+                    <!--Nav items :end-->
+                </nav>
+            </aside>
+            <!--Navigation :end-->
+            <!--Main container :start-->
+            <main>
+                <!--Circle svg :start-->
+                <div id="wrapper">
+                    <svg class="motio-o-home" viewBox="0 0 100 100">
+                        <path class="isolation" fill="none" d="M12 50c0-21
+                            17-38
+                            38-38s38 17 38 38-17 38-38 38"></path>
+                    </svg>
+                </div>
+                <!--Circle svg :end-->
 
-                    <!--Circle text :start-->
-                    <div id="bottom_text">
-                        <p class="text-white">I design intractive user
-                            experiences &
-                            beautiful interfaces
-                        </p>
-                        <br>
-                        <p id="lets_work">LET’S WORK TOGETHER <span
-                                class="text-xl pl-3 animate-pulse text-white"> ➤</span>
-                        </p>
+                <!--Intro :start-->
+                <div id="intro" class="text-white intro_parts">
+                    <p id="hi" class="intro_parts">Hi, I am</p>
+                    <h2 id="name" class="intro_parts">Shubham Kumar</h2>
+                    <h3 id="name_sub" class="intro_parts">I build things
+                        which live on
+                        internet !</h3>
+                </div>
+                <!--Intro :end-->
+
+                <!--Social media :start-->
+                <div id="social">
+                    <div>
+                        <ul>
+                            <li><a class="flex align-items-center
+                                    text-white pb-2"><span>━━━</span><i
+                                        class="fa fa-facebook
+                                        text-white"></i></a>
+                            </li>
+                            <li><a class="flex align-items-center
+                                    text-white pb-2">━━━<i class="fa
+                                        fa-linkedin
+                                        text-white"></i></a>
+                            </li>
+                            <li><a class="flex align-items-center
+                                    text-white pb-2">━━━<i class="fa
+                                        fa-whatsapp
+                                        text-white"></i></a>
+                            </li>
+                            <li><a class="flex align-items-center
+                                    text-white">━━━<i class="fa fa-github
+                                        text-white"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <!--Circle text :end-->
+                </div>
+                <!--Social media :end-->
 
-                </main>
-                <!--Main container :end-->
-            </div>
-            <!--Container :end-->
+                <!--Circle text :start-->
+                <div id="bottom_text">
+                    <p class="text-white">I design intractive user
+                        experiences &
+                        beautiful interfaces
+                    </p>
+                    <br>
+                    <p id="lets_work">LET’S WORK TOGETHER <span
+                            class="text-xl pl-3 animate-pulse text-white"> ➤</span>
+                    </p>
+                </div>
+                <!--Circle text :end-->
 
-            <!-- index.js import-->
-            <script src="./js/index.js"></script>
-        </body>
-    </html>
+            </main>
+            <!--Main container :end-->
+        </div>
+        <!--Container :end-->
+
+        <!-- index.js import-->
+        <script src="./js/index.js"></script>
+    </body>
+</html>
