@@ -1,0 +1,20 @@
+body {
+  overflow-y: visible;
+}
+#main {
+  background-color: black;
+  height: 100%;
+  min-height: 100vh;
+}
+section {
+  overflow-y: hidden;
+}
+.about-me{
+    opacity: 0;
+}
+/* @media (max-width: 500px) {
+  #main {
+    background-color: black;
+    min-height: 100vh;
+  }
+} */

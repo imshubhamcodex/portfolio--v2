@@ -11,7 +11,7 @@ $(function () {
         },
 
         async enter() {
-          contentAnimation();
+          // contentAnimation();
         },
 
         async afterEnter() {
@@ -50,6 +50,7 @@ function pageTransition() {
     transformOrigin: "bottom left",
     stagger: 0.09,
   });
+
 }
 
 // delay function
@@ -83,10 +84,15 @@ function contentAnimation() {
       ease: "Expo.easeOut",
     }
   );
+  console.log('ccontent')
+  tl.fromTo(
+    ".about-me",
+    { duration: 0.4, opacity: 0, y: 100, stagger: 0.1, ease: "Back.easeOut" },
+    { duration: 0.4, opacity: 1, y: 0, stagger: 0.1, ease: "Back.easeOut" }
+  );
 
   // tl.to("#wrapper", { display: "block" });
   tl.to(".mobile_nav_circle", { display: "none" });
-
 }
 
 function toggleNav() {
@@ -105,6 +111,7 @@ function leftMove() {
   document.getElementsByTagName("main")[0].style.display = "none";
   document.getElementById("mobile_nav_items").style.display = "block";
   document.getElementById("mobile_logo").style.display = "none";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
 
   tl.fromTo(
     ".loading-screen_0",
@@ -151,9 +158,9 @@ function leftMove() {
   tl.fromTo(
     "#bar_icon",
     { duration: 0.5, opacity: 0, y: -40, ease: "Back.easeOut" },
-    { duration: 0.5, opacity: 1, y: 0, ease: "Back.easeOut" },"-=0.8"
+    { duration: 0.5, opacity: 1, y: 0, ease: "Back.easeOut" },
+    "-=0.8"
   );
-
 }
 
 function rightMove() {
@@ -162,6 +169,7 @@ function rightMove() {
   document.getElementsByTagName("main")[0].style.display = "block";
   document.getElementById("mobile_nav_items").style.display = "none";
   document.getElementById("mobile_logo").style.display = "block";
+  document.getElementsByTagName("body")[0].style.overflow = "visible";
 
   let tl = gsap.timeline();
   tl.fromTo(
@@ -200,6 +208,7 @@ function rightMove() {
   tl.fromTo(
     "#bar_icon",
     { duration: 0.5, opacity: 0, y: -40, ease: "Back.easeOut" },
-    { duration: 0.5, opacity: 1, y: 0, ease: "Back.easeOut" },"-=0.8"
+    { duration: 0.5, opacity: 1, y: 0, ease: "Back.easeOut" },
+    "-=0.8"
   );
 }

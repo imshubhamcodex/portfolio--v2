@@ -42,33 +42,33 @@
         <!--The transition of step :end-->
 
         <!--Main container :start-->
-        <div id="main" data-barba="container" data-barba-namespace="home">
+        <section id="main" data-barba="container" data-barba-namespace="home">
             <!--Mobile nav bar :start-->
-            <div id="mobile_nav_bar">
-                <div class="flex justify-around">
-                    <div class="flex-1 pl-4 pt-4">
+            <section id="mobile_nav_bar">
+                <section class="flex justify-around">
+                    <section class="flex-1 pl-4 pt-4">
                         <h2 id="mobile_logo" class="text-white text-2xl"
                             style="color: #00ffd3;"><a href="./index.html">Logo</a></h2>
-                    </div>
-                    <div class="flex-2 pr-4 pt-4" onclick="toggleNav()">
+                    </section>
+                    <section class="flex-2 pr-4 pt-4" onclick="toggleNav()">
                         <i id="bar_icon" class="fa fa-bars text-white text-2xl"
                             style="font-size: 30px;"></i>
-                    </div>
-                </div>
+                    </section>
+                </section>
 
                 <!--Blue loading :start-->
-                <div class="load-container">
-                    <div class="loading-screen"></div>
-                </div>
+                <section class="load-container">
+                    <section class="loading-screen"></section>
+                </section>
                 <!--Blue loading :end-->
                 <!--White loading :start-->
-                <div class="load-container_0">
-                    <div class="loading-screen_0"></div>
-                </div>
+                <section class="load-container_0">
+                    <section class="loading-screen_0"></section>
+                </section>
                 <!--White loading :end-->
 
                 <!--Nav Box :start-->
-                <div id="mobile_nav_items">
+                <section id="mobile_nav_items">
                     <!--Nav items :start-->
                     <ul class="text-white pl-12">
                         <li>
@@ -86,7 +86,7 @@
                     </ul>
                     <!--Nav items :end-->
                     <!--Social icons :start-->
-                    <div class="icon_mob text-2xl" style="position:
+                    <section class="icon_mob text-2xl" style="position:
                         absolute;bottom:0px;width: 100%;height: 200px;">
                         <i style="position: absolute; top:100px;left:100px;
                             z-index: 10;" class="fa fa-facebook text-white"></i>
@@ -96,26 +96,26 @@
                             z-index: 10;" class="fa fa-whatsapp text-white"></i>
                         <i style="position: absolute; top:98px;left:265px;
                             z-index: 10;" class="fa fa-github text-white"></i>
-                    </div>
+                    </section>
                     <!--Social icons :end-->
                     <!--Circle :start-->
-                    <div class="mobile_nav_circle">
+                    <section class="mobile_nav_circle">
                         <svg class="motio-o-home-half" viewBox="0 0 100 100">
                             <path class="isolation" fill="none" d="M12 50c0-21
                                 17-38
                                 38-38s38 17 38 38-17 38-38 38"></path>
                         </svg>
-                    </div>
+                    </section>
                     <!--Circle :end-->
-                </div>
+                </section>
                 <!--Nav Box :end-->
 
-            </div>
+            </section>
             <!--Mobile nav bar :end-->
             <!--Navigation :start-->
             <aside id="nav_aside" class="p-12">
                 <nav class="flex items-center justify-between flex-wrap">
-                    <div class="flex items-center flex-shrink-0 text-white
+                    <section class="flex items-center flex-shrink-0 text-white
                         mr-6">
 
                         <span class="nav_text font-bold text-2xl
@@ -123,12 +123,12 @@
                             218); cursor: pointer;"> <a href="./index.html">Logo</a>
                         </span>
 
-                    </div>
+                    </section>
                     <!--Nav items :start-->
-                    <div id="nav_items" class="w-full block flex-grow
+                    <section id="nav_items" class="w-full block flex-grow
                         lg:flex
                         lg:items-center lg:w-auto">
-                        <div class="text-sm lg:flex-grow">
+                        <section class="text-sm lg:flex-grow">
                             <a href="./about.html" class="nav_text block
                                 mt-4 lg:inline-block lg:mt-0
                                 text-white mr-6">
@@ -152,8 +152,8 @@
                                 text-white mr-6">
                                 Contact
                             </a>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     <!--Nav items :end-->
                 </nav>
             </aside>
@@ -161,17 +161,102 @@
 
             <!--Main container :start-->
             <main>
+                <!--About div :start-->
+                <section class="grid grid-cols-1 gap-4 text-white
+                    md:grid-cols-2"
+                    style="width: 78vw; margin: auto auto;text-align: justify;">
+                    <section><h1 class="about-me text-3xl font-bold">About Me</h1>
+                        <br />
+                        <p class="about-me text-lg"> Hi, my name is Shubham and I love to
+                            design things
+                            that live on internet. I started web
+                            development back in late 2018 and worked as
+                            freelancer for <span class="font-bold
+                                cursor-pointer" style="color:
+                                rgb(100, 255, 218);">ATG</span> (India in 2019),
+                            <span class="font-bold cursor-pointer" style="color:
+                                rgb(100, 255, 218);">Edhusk</span>
+                            (India in
+                            2020) and <span class="font-bold cursor-pointer"
+                                style="color:
+                                rgb(100, 255, 218);">QMWIK</span> (Germany in
+                            2021)</span>.
+                    </p>
+                    <p class="about-me text-lg">Currently I am living in Bihar,
+                        India, where I have been working as a full stack
+                        developer in <span class="font-bold cursor-pointer"
+                            style="color:
+                            rgb(100, 255, 218);">Cognizant Technology<span>.
+                            </p>
+                            <br />
+                            <p class=" about-me text-lg">
+                                I work from the user experience to the
+                                visual
+                                details and then transform these in working
+                                code. My main focus these days is building
+                                accessible, <span class="font-bold
+                                    cursor-pointer"
+                                    style="color:
+                                    rgb(100, 255, 218);">inclusive products</span>
+                                and <span class="font-bold cursor-pointer"
+                                    style="color:
+                                    rgb(100, 255, 218);">digital
+                                    experiences</span> at Cognizant Technology.
+                            </p>
+                            <br>
+                            <br>
+                            <p class="about-me text-xl font-bold cursor-pointer"
+                                style="color:rgb(100, 255,
+                                218);">DOWNLOAD RESUME <span class="ml-3
+                                    animate-pulse">➤</span></p>
+                        </section>
+                        <section>Second div put img </section>
+                    </section>
+                    <!--About div :end-->
 
-            </main>
+                    <br>
+                    <br>
+                    <br>
+                    <section style="width: 78vw; margin: auto auto;text-align:
+                        justify;">
+                        <p class="about-me text-white text-lg">Here are a few
+                            technologies I've been working with recently:</p>
+                            <br>
+                        <section class="grid grid-cols-2 md:grid-cols-4 gap-4" style="width:
+                            100%; margin: auto auto;text-align:
+                            justify; color:rgb(100, 255,
+                            218);">
+                            <section>
+                                <ul>
+                                    <li>▹ <span class="ml-2 font-semibold">JavaScript</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">Java</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">Spring</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">Node.js</span></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <ul>
+                                    <li>▹ <span class="ml-2 font-semibold">React</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">Vue</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">Nuxt</span></li>
+                                    <li>▹ <span class="ml-2 font-semibold">GSAP</span></li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                    <br>
+                    <br>
+                    <br>
+                </main>
+                <!--Main container :end-->
+
+            </section>
             <!--Main container :end-->
 
-        </div>
-        <!--Main container :end-->
+            <!-- about.css import-->
+            <link href="./css/about.css" rel="stylesheet">
 
-        <!-- about.css import-->
-        <link href="./css/about.css" rel="stylesheet">
-
-        <!-- about.js import-->
-        <script src="./js/about.js"></script>
-    </body>
-</html>
+            <!-- about.js import-->
+            <script src="./js/about.js"></script>
+        </body>
+    </html>
