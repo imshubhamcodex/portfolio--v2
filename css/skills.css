@@ -1,0 +1,152 @@
+body {
+  overflow-y: visible !important;
+}
+#main {
+  background-color: black;
+  height: 100%;
+  min-height: 100vh;
+}
+.outer_sec {
+  width: 85vw;
+  margin: auto auto;
+  text-align: justify;
+}
+.inner_sec {
+  width: 100%;
+  margin: auto auto;
+  text-align: justify;
+}
+h2 {
+  color: rgb(100, 255, 218);
+}
+.myskill {
+  opacity: 0;
+}
+.myskill_des h3,
+.myskill_des h2 {
+  opacity: 0;
+}
+.myskill_proto h3,
+.myskill_proto h2 {
+  opacity: 0;
+}
+.myskill_prod h3,
+.myskill_prod h2 {
+  opacity: 0;
+}
+.myskill_animi h3,
+.myskill_animi h2 {
+  opacity: 0;
+}
+.myskill_dev h3,
+.myskill_dev h2 {
+  opacity: 0;
+}
+.tech_known,
+.l_li li,
+.r_li li {
+  opacity: 0;
+}
+
+.footer {
+  width: 90vw;
+  height: 50px;
+  margin: auto auto;
+  opacity: 0;
+}
+.footer h1{
+    color: #00ffd3;
+    margin-top: 12px;
+}
+
+
+#parent-loading {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .lower_sec {
+    padding-bottom: 90px;
+  }
+  .footer{
+    opacity: 1;
+  }
+  main{
+    padding-top: 30px;
+  }
+}
+
+
+@media(max-width:420px) {
+  #facebook{
+
+  }
+  #linkedin{
+    left:160px !important;
+    top:60px !important;
+  }
+  #whatsapp{
+    left:240px !important;
+    top:60px !important;
+  }
+  #github{
+    left:300px !important;
+    top:93px !important;
+  }
+}
+
+@media(max-width:370px) {
+  #facebook{
+
+  }
+  #linkedin{
+    top:75px !important;
+    left:150px !important;
+  }
+  #whatsapp{
+    top:75px !important;
+    left:210px !important;
+  }
+  #github{
+    top:98px !important;
+    left:265px !important;
+  }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- barba.js import-->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <!-- gsap.js import-->
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <!-- tailwind.js import-->
+        <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+        <!--Google font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+            rel="stylesheet">
+        <!--Fontawesome icon-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- step.css import-->
+        <link href="./css/step.css" rel="stylesheet">
+        <!-- index.css import-->
+        <link href="./css/index.css" rel="stylesheet">
+        <!-- about.css import-->
+        <link href="./css/contact.css" rel="stylesheet">
+
+        <title>Contact</title>
+    </head>
+    <body data-barba="wrapper">
+        <!--The transition of step :start-->
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--The transition of step :end-->
+
+
+
+        <!--Main container :start-->
+        <section id="main" data-barba="container"
+            data-barba-namespace="contact">
+            <!--loading :start-->
+            <div id="parent-loading">
+                <div class="lds-dual-ring"></div>
+            </div>
+            <!--loading :end-->
+            <!--Mobile nav bar :start-->
+            <section id="mobile_nav_bar">
+                <section class="flex justify-around">
+                    <section class="flex-1 pl-4 pt-4">
+                        <h2 onclick="enableLoading()" id="mobile_logo"
+                            class="text-white text-3xl"
+                            style="color: #00ffd3;"><a href="./index.html"><i
+                                    class="fa fa-slack animate-spin"></i></a></h2>
+                    </section>
+                    <section class="flex-2 pr-4 pt-4"
+                        onclick="toggleNav_Contact()">
+                        <i id="bar_icon" class="fa fa-bars text-white text-2xl"
+                            style="font-size: 30px;"></i>
+                    </section>
+                </section>
+
+                <!--Blue loading :start-->
+                <section class="load-container">
+                    <section class="loading-screen"></section>
+                </section>
+                <!--Blue loading :end-->
+                <!--White loading :start-->
+                <section class="load-container_0">
+                    <section class="loading-screen_0"></section>
+                </section>
+                <!--White loading :end-->
+
+                <!--Nav Box :start-->
+                <section id="mobile_nav_items">
+                    <!--Nav items :start-->
+                    <ul class="text-white pl-12">
+                        <li onclick="enableLoading()">
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./skills.html">Skills</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./work.html">Work</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!--Nav items :end-->
+                    <!--Social icons :start-->
+                    <section class="icon_mob text-2xl" style="position:
+                        absolute;bottom:0px;width: 100%;height: 200px;">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100007454013243"
+                            target="_blank"><i
+                                id="facebook" style="position: absolute;
+                                top:100px;left:100px;
+                                z-index: 10;" class="fa fa-facebook text-white"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/shubham-kumar-494418164/"
+                            target="_blank"><i
+                                id="linkedin" style="position: absolute;
+                                top:75px;left:150px;
+                                z-index: 10;" class="fa fa-linkedin text-white"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=918018439472"
+                            target="_blank"><i
+                                id="whatsapp" style="position: absolute;
+                                top:75px;left:210px;
+                                z-index: 10;" class="fa fa-whatsapp text-white"></i></a>
+                        <a href="https://github.com/imshubhamcodex"
+                            target="_blank"><i
+                                id="github" style="position: absolute;
+                                top:98px;left:265px;
+                                z-index: 10;" class="fa fa-github text-white"></i></a>
+                    </section>
+                    <!--Social icons :end-->
+                    <!--Circle :start-->
+                    <section class="mobile_nav_circle">
+                        <svg class="motio-o-home-half" viewBox="0 0 100 100">
+                            <path class="isolation" fill="none" d="M12 50c0-21
+                                17-38
+                                38-38s38 17 38 38-17 38-38 38"></path>
+                        </svg>
+                    </section>
+                    <!--Circle :end-->
+                </section>
+                <!--Nav Box :end-->
+
+            </section>
+            <!--Mobile nav bar :end-->
+            <!--Navigation :start-->
+            <aside id="nav_aside" class="p-12">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <section class="flex items-center flex-shrink-0 text-white
+                        mr-6">
+
+                        <span class="nav_text font-bold text-2xl
+                            tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
+                            218); cursor: pointer;"> <a href="./index.html"><i
+                                    class="fa fa-code text-4xl"></i></a>
+                        </span>
+
+                    </section>
+                    <!--Nav items :start-->
+                    <section id="nav_items" class="w-full block flex-grow
+                        lg:flex
+                        lg:items-center lg:w-auto">
+                        <section class="text-sm lg:flex-grow">
+                            <a href="./about.html" class="nav_text block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                About
+                            </a>
+                            <a href="./skills.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Skills
+                            </a>
+                            <a href="./work.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Work
+                            </a>
+                            <a href="./contact.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Contact
+                            </a>
+                        </section>
+                    </section>
+                    <!--Nav items :end-->
+                </nav>
+            </aside>
+            <!--Navigation :end-->
+
+            <!--Main container :start-->
+            <main>
+                <section class="outer_sec text-white">
+                    <h1 class="text-3xl font-bold">Let's Talk</h1>
+                    <br>
+                    <h2 class="text-xl font-bold">Hello! Let’s talk about your
+                        <span style="color: rgb(100,255,218);">new project</span></h2>
+                    <br>
+                    <h2 class="text-xl">Fill in the form to contact me or send
+                        an email to <span class="font-bold" style="color:
+                            rgb(100,255,218);cursor: pointer;">shubhamcontactmail@gmail.com</span></h2>
+                    <br>
+                    <section class="sec" style="width: 55vw;">
+                        <form action="">
+                            <label class="block">
+                                <span class="text-white">Your name</span>
+                                <input type="text" class="form-input mt-1 block
+                                    w-full font-bold text-black"
+                                    placeholder="Jhon Cena" required>
+                            </label>
+                            <br>
+                            <label class="block">
+                                <span class="text-white">Your Eemail</span>
+                                <input type="email" class="form-input mt-1 block
+                                    w-full text-black font-bold"
+                                    placeholder="jhon@example.com" required>
+                            </label>
+                            <br>
+                            <label class="block">
+                                <span class="text-white">Tell me about your
+                                    project</span>
+                                <textarea class="form-textarea mt-1 block w-full
+                                    text-black font-black"
+                                    rows="3" placeholder="Your project idea.."
+                                    required></textarea>
+                            </label>
+                            <br>
+                            <button type="submit" class="bg-white
+                                hover:bg-gray-400 text-gray-800 font-bold py-2
+                                px-4 rounded inline-flex items-center">
+                                SEND MESSAGE
+                            </button>
+                        </form>
+                        <div id="social_media">
+                            <div>
+                                <ul>
+                                    <li><a
+                                            href="https://www.facebook.com/profile.php?id=100007454013243"
+                                            target="_blank" class="flex
+                                            align-items-center
+                                            text-white pb-2"><span></span><i
+                                                class="fa fa-facebook
+                                                text-white"></i>━━━</a>
+                                    </li>
+                                    <li><a
+                                            href="https://www.linkedin.com/in/shubham-kumar-494418164/"
+                                            target="_blank" class="flex
+                                            align-items-center
+                                            text-white pb-2"><i class="fa
+                                                fa-linkedin
+                                                text-white"></i>━━━</a>
+                                    </li>
+                                    <li><a
+                                            href="https://api.whatsapp.com/send?phone=918018439472"
+                                            target="_blank" class="flex
+                                            align-items-center
+                                            text-white pb-2"><i class="fa
+                                                fa-whatsapp
+                                                text-white"></i>━━━</a>
+                                    </li>
+                                    <li><a
+                                            href="https://github.com/imshubhamcodex"
+                                            target="_blank" class="flex
+                                            align-items-center
+                                            text-white"><i class="fa
+                                                fa-github
+                                                text-white"></i>━━━</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br><br><br>
+                    </section>
+                </section>
+                <!--Footer :start-->
+                <section class="footer">
+                    <hr>
+                    <h1 class="text-center">Designed
+                        & Built by Shubham Kumar</h1>
+                </section>
+                <!--Footer :end-->
+            </main>
+            <!--Main container :end-->
+
+        </section>
+        <!--Main container :end-->
+
+
+
+
+
+        <!--Scroll bar import-->
+        <link rel="stylesheet" href="./css/scroll.css">
+        <!-- index.js import-->
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>

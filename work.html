@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- barba.js import-->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <!-- gsap.js import-->
+        <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
+        <!-- tailwind.js import-->
+        <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+        <!--Google font import-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+            rel="stylesheet">
+        <!--Fontawesome icon-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!-- aos animation -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- step.css import-->
+        <link href="./css/step.css" rel="stylesheet">
+        <!-- index.css import-->
+        <link href="./css/index.css" rel="stylesheet">
+        <!-- about.css import-->
+        <link href="./css/work.css" rel="stylesheet">
+
+        <title>Work</title>
+    </head>
+    <body data-barba="wrapper">
+        <!--The transition of step :start-->
+        <ul class="transition">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--The transition of step :end-->
+
+
+
+        <!--Main container :start-->
+        <section id="main" data-barba="container" data-barba-namespace="work">
+            <!--loading :start-->
+            <div id="parent-loading">
+                <div class="lds-dual-ring"></div>
+            </div>
+            <!--loading :end-->
+            <!--Mobile nav bar :start-->
+            <section id="mobile_nav_bar">
+                <section class="flex justify-around">
+                    <section class="flex-1 pl-4 pt-4">
+                        <h2 onclick="enableLoading()" id="mobile_logo"
+                            class="text-white text-3xl"
+                            style="color: #00ffd3;"><a href="./index.html"><i
+                                    class="fa fa-slack animate-spin"></i></a></h2>
+                    </section>
+                    <section class="flex-2 pr-4 pt-4"
+                        onclick="toggleNav_Work()">
+                        <i id="bar_icon" class="fa fa-bars text-white text-2xl"
+                            style="font-size: 30px;"></i>
+                    </section>
+                </section>
+
+                <!--Blue loading :start-->
+                <section class="load-container">
+                    <section class="loading-screen"></section>
+                </section>
+                <!--Blue loading :end-->
+                <!--White loading :start-->
+                <section class="load-container_0">
+                    <section class="loading-screen_0"></section>
+                </section>
+                <!--White loading :end-->
+
+                <!--Nav Box :start-->
+                <section id="mobile_nav_items">
+                    <!--Nav items :start-->
+                    <ul class="text-white pl-12">
+                        <li onclick="enableLoading()">
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./skills.html">Skills</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./work.html">Work</a>
+                        </li>
+                        <li onclick="enableLoading()">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!--Nav items :end-->
+                    <!--Social icons :start-->
+                    <section class="icon_mob text-2xl" style="position:
+                        absolute;bottom:0px;width: 100%;height: 200px;">
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100007454013243"
+                            target="_blank"><i
+                                id="facebook" style="position: absolute;
+                                top:100px;left:100px;
+                                z-index: 10;" class="fa fa-facebook text-white"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/shubham-kumar-494418164/"
+                            target="_blank"><i
+                                id="linkedin" style="position: absolute;
+                                top:75px;left:150px;
+                                z-index: 10;" class="fa fa-linkedin text-white"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=918018439472"
+                            target="_blank"><i
+                                id="whatsapp" style="position: absolute;
+                                top:75px;left:210px;
+                                z-index: 10;" class="fa fa-whatsapp text-white"></i></a>
+                        <a href="https://github.com/imshubhamcodex"
+                            target="_blank"><i
+                                id="github" style="position: absolute;
+                                top:98px;left:265px;
+                                z-index: 10;" class="fa fa-github text-white"></i></a>
+                    </section>
+                    <!--Social icons :end-->
+                    <!--Circle :start-->
+                    <section class="mobile_nav_circle">
+                        <svg class="motio-o-home-half" viewBox="0 0 100 100">
+                            <path class="isolation" fill="none" d="M12 50c0-21
+                                17-38
+                                38-38s38 17 38 38-17 38-38 38"></path>
+                        </svg>
+                    </section>
+                    <!--Circle :end-->
+                </section>
+                <!--Nav Box :end-->
+
+            </section>
+            <!--Mobile nav bar :end-->
+            <!--Navigation :start-->
+            <aside id="nav_aside" class="p-12">
+                <nav class="flex items-center justify-between flex-wrap">
+                    <section class="flex items-center flex-shrink-0 text-white
+                        mr-6">
+
+                        <span class="nav_text font-bold text-2xl
+                            tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
+                            218); cursor: pointer;"> <a href="./index.html"><i
+                                    class="fa fa-code text-4xl"></i></a>
+                        </span>
+
+                    </section>
+                    <!--Nav items :start-->
+                    <section id="nav_items" class="w-full block flex-grow
+                        lg:flex
+                        lg:items-center lg:w-auto">
+                        <section class="text-sm lg:flex-grow">
+                            <a href="./about.html" class="nav_text block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                About
+                            </a>
+                            <a href="./skills.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Skills
+                            </a>
+                            <a href="./work.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Work
+                            </a>
+                            <a href="./contact.html" class="nav_text
+                                block
+                                mt-4 lg:inline-block lg:mt-0
+                                text-white mr-6">
+                                Contact
+                            </a>
+                        </section>
+                    </section>
+                    <!--Nav items :end-->
+                </nav>
+            </aside>
+            <!--Navigation :end-->
+
+            <!--Main container :start-->
+            <main>
+                <!--Work div :start-->
+                <section id="outer_sec" style="width: 78vw; margin: auto
+                    auto;text-align:
+                    justify;">
+                    <h1 class="text-3xl font-bold text-white">My Work</h1>
+                    <section class="grid grid-cols-1 gap-4 text-white">
+                        <!--1 left section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-6 self-center cursor-pointer"
+                                        data-aos="fade-right">
+                                        <a
+                                            href="https://streamerui.netlify.app/"
+                                            target="_blank"><img
+                                                id="streamer_img"
+                                                src="./img/streamer.PNG"
+                                                alt="streamer" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;">
+                                        </a>
+                                    </div>
+                                    <div class="row-span-full col-span-5
+                                        col-end-11 z-50" data-aos="fade-left">
+                                        <section class="text-white
+                                            text-right text_sec"
+                                            style="padding-top: 55px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Streamer</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>
+                                                    The Streamer is an online
+                                                    streaming
+                                                    music app through which you
+                                                    can listen music and add
+                                                    them to your favorite list
+                                                    also, upload your favorite
+                                                    music and share it with
+                                                    everyone.
+                                                </h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Howler.js,
+                                                Vue.js
+                                            </p>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/streamer"
+                                                target="_blank"><i class="fa
+                                                    fa-github text-white
+                                                    mr-6 text-xl
+                                                    cursor-pointer"></i></a>
+                                            <a
+                                                href="https://streamerui.netlify.app/"
+                                                target="_blank"><i
+                                                    class="fa fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <br />
+                        <br />
+                        <!--2 right section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-5 self-center cursor-pointer
+                                        z-50" data-aos="fade-right">
+                                        <section class="text-white
+                                            text-left text_sec z-50"
+                                            style="padding-top:30px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Roomlelo</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app, built-in Vue.js
+                                                    framework that helps people
+                                                    to rent rooms online.
+                                                    This service is currently
+                                                    active in Varanasi.</h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Vue.js,
+                                                Firebase
+                                            </p>
+                                            <i class="fa fa-github text-white
+                                                mr-6 text-xl cursor-pointer"
+                                                onclick="noGithub()"></i>
+                                            <a
+                                                href="https://roomlelo.in/"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="row-span-full col-span-6
+                                        col-end-11" data-aos="fade-left">
+                                        <a
+                                            href="https://roomlelo.in/"
+                                            target="_blank"><img
+                                                id="roomlelo_img"
+                                                src="./img/roomlelo.PNG"
+                                                alt="roomlelo" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--2 right section :end-->
+                        <br />
+                        <br />
+
+                        <!--3 left section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-6 self-center cursor-pointer"
+                                        data-aos="fade-right">
+                                        <a
+                                            href="https://www.edhusk.com/"
+                                            target="_blank"><img id="edhusk_img"
+                                                src="./img/edhusk.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                    <div class="row-span-full col-span-5
+                                        col-end-11 z-50" data-aos="fade-left">
+                                        <section class="text-white
+                                            text-right text_sec"
+                                            style="padding-top: 55px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">EdHusk</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app, built-in Nuxt.js
+                                                    framework that helps people
+                                                    to book tutor online.
+                                                    This service provides online
+                                                    classes for kids and allow
+                                                    then to pursue their hobbies
+                                                    .</h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Nuxt.js,
+                                                Bunifu
+                                            </p>
+                                            <i class="fa fa-github text-white
+                                                mr-6 text-xl cursor-pointer"
+                                                onclick="noGithub()"></i>
+                                            <a
+                                                href="https://www.edhusk.com/"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <br />
+                        <br />
+                        <!--4 right section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-5 self-center cursor-pointer
+                                        z-50" data-aos="fade-right">
+                                        <section class="text-white
+                                            text-left text_sec z-50"
+                                            style="padding-top: 30px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Ten
+                                                Billion</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app, built-in Nuxt.js
+                                                    that keep track of your
+                                                    investments and also having
+                                                    multiple functionalities
+                                                    like SIP calculator payment
+                                                    details & market analysis.
+                                                </h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Nuxt.js,
+                                                Firebase Vuetify,
+                                            </p>
+                                            <i class="fa fa-github text-white
+                                                mr-6 text-xl cursor-pointer"
+                                                onclick="noGithub()"></i>
+                                            <a
+                                                href="https://tenbillion.netlify.app/home/index"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="row-span-full col-span-6
+                                        col-end-11" data-aos="fade-left">
+                                        <a
+                                            href="https://tenbillion.netlify.app/home/index"
+                                            target="_blank"><img
+                                                id="tenbillion_img"
+                                                src="./img/tenbillion.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--4 right section :end-->
+                        <br />
+                        <br />
+
+                        <!--5 left section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-6 self-center cursor-pointer"
+                                        data-aos="fade-right">
+                                        <a
+                                            href="https://blog-ui-test.netlify.app/"
+                                            target="_blank"><img id="blog_img"
+                                                src="./img/blog.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                    <div class="row-span-full col-span-5
+                                        col-end-11 z-50" data-aos="fade-left">
+                                        <section class="text-white
+                                            text-right text_sec"
+                                            style="padding-top: 55px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Tech
+                                                Blog</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app, to post blogs and
+                                                    read other people's blogs. A
+                                                    very nice UI for blogs. This
+                                                    web app is use to read/write
+                                                    technical blogs.</h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">HTML5,
+                                                CSS3
+                                            </p>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/blogs/tree/master/Task-Blog"
+                                                target="_blank"><i class="fa
+                                                    fa-github text-white
+                                                    mr-6 text-xl
+                                                    cursor-pointer"></i></a>
+                                            <a
+                                                href="https://blog-ui-test.netlify.app/"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <br />
+                        <br />
+                        <!--6 right section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-5 self-center cursor-pointer
+                                        z-50" data-aos="fade-right">
+                                        <section class="text-white
+                                            text-left text_sec z-50"
+                                            style="padding-top: 30px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Provider
+                                                Reg.</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app build in Vue.js
+                                                    helps to register service
+                                                    provider in a medical
+                                                    organization provider can be
+                                                    individual and
+                                                    organizational. </h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Vue.js,
+                                                Vuetify
+                                            </p>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/codex_frontend"
+                                                target="_blank"><i class="fa
+                                                    fa-github text-white
+                                                    mr-6 text-xl
+                                                    cursor-pointer"></i></a>
+                                            <a
+                                                href="https://codexui0.netlify.app/"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="row-span-full col-span-6
+                                        col-end-11" data-aos="fade-left">
+                                        <a
+                                            href="https://codexui0.netlify.app/"
+                                            target="_blank"><img
+                                                id="provider_img"
+                                                src="./img/provider.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--6 right section :end-->
+                        <br />
+                        <br />
+
+                        <!--7 left section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-6 self-center cursor-pointer"
+                                        data-aos="fade-right">
+                                        <a
+                                            href="https://weather-app-all.netlify.app/"
+                                            target="_blank">
+                                            <img id="weather_img"
+                                                src="./img/weather.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                    <div class="row-span-full col-span-5
+                                        col-end-11 z-50" data-aos="fade-left">
+                                        <section class="text-white
+                                            text-right text_sec"
+                                            style="padding-top: 55px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Weather
+                                                app</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>A web app, to check weather
+                                                    of any place in this world.
+                                                    It consumes the API of open
+                                                    weather and render data for
+                                                    next seven days weather
+                                                    forecast.</h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">HTML,
+                                                Openweather API
+                                            </p>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/weather-widget"
+                                                target="_blank"><i class="fa
+                                                    fa-github text-white
+                                                    mr-6 text-xl
+                                                    cursor-pointer"></i></a>
+                                            <a
+                                                href="https://weather-app-all.netlify.app/"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <br />
+                        <br />
+                        <!--8 right section-->
+                        <section class="pl-2 pr-2">
+                            <div class="wrap w-6/6 mx-auto">
+                                <div class="grid grid-cols-10">
+                                    <div class="row-span-full col-start-1
+                                        col-span-5 self-center cursor-pointer
+                                        z-50" data-aos="fade-right">
+                                        <section class="text-white
+                                            text-left text_sec z-50"
+                                            style="padding-top: 30px;">
+                                            <p style="color: #00ffd3;"
+                                                class="pb-2">Featured Project</p>
+                                            <h1 class="font-bold text-xl pb-6">Music
+                                                Archive</h1>
+                                            <section style="background-color:
+                                                #112240;border-radius: 5px;"
+                                                class="pl-4 pr-4 pt-6 pb-6
+                                                mb-6">
+                                                <h2>This is a music app made for
+                                                    windows using technology
+                                                    like visual basic and basic
+                                                    form UI that can play music,
+                                                    radio and also search music
+                                                    online.</h2>
+                                            </section>
+                                            <p class="pb-2 text-sm">Visual
+                                                Basic,
+                                                Bunifu UI
+                                            </p>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/music-archive"
+                                                target="_blank"><i class="fa
+                                                    fa-github text-white
+                                                    mr-6 text-xl
+                                                    cursor-pointer"></i></a>
+                                            <a
+                                                href="https://github.com/imshubhamcodex/music-archive"
+                                                target="_blank"><i class="fa
+                                                    fa-link text-white
+                                                    text-xl cursor-pointer"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="row-span-full col-span-6
+                                        col-end-11" data-aos="fade-left">
+                                        <a
+                                            href="https://github.com/imshubhamcodex/music-archive"
+                                            target="_blank">
+                                            <img id="music_archive_img"
+                                                src="./img/m_archive.PNG"
+                                                alt="random imgee" class="w-full
+                                                object-cover object-center
+                                                shadow-md" style="height:400px;
+                                                border-radius:
+                                                5px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--8 right section :end-->
+                        <br />
+                        <br />
+
+                    </section>
+                </section>
+                <!--Work div :end-->
+                <br>
+                <br>
+                <br>
+                <!--Footer :start-->
+                <section class="footer">
+                    <hr>
+                    <h1 class="text-center">Designed
+                        & Built by Shubham Kumar</h1>
+                </section>
+                <!--Footer :end-->
+            </main>
+            <!--Main container :end-->
+
+
+
+        </section>
+        <!--Main container :end-->
+
+
+
+
+        <!--Scroll bar import-->
+        <link rel="stylesheet" href="./css/scroll.css">
+        <!-- index.js import-->
+        <script src="./js/index.js"></script>
+
+    </body>
+</html>

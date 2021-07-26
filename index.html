@@ -21,7 +21,9 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Jquery-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
+        <!-- aos animation -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- step.css import-->
         <link href="./css/step.css" rel="stylesheet">
         <!-- index.css import-->
@@ -29,7 +31,7 @@
 
         <title>Home</title>
     </head>
-    <body data-barba="wrapper">
+    <body data-barba="wrapper" style="overflow: hidden;">
         <!--The transition of step :start-->
         <ul class="transition">
             <li></li>
@@ -41,16 +43,26 @@
         </ul>
         <!--The transition of step :end-->
 
+
+
         <!--Container :start-->
         <div id="main" data-barba="container" data-barba-namespace="home">
+            <!--loading :start-->
+            <div id="parent-loading">
+                <div class="lds-dual-ring"></div>
+            </div>
+            <!--loading :end-->
             <!--Mobile nav bar :start-->
             <div id="mobile_nav_bar">
                 <div class="flex justify-around">
                     <div class="flex-1 pl-4 pt-4">
-                        <h2 id="mobile_logo" class="text-white text-2xl"
-                            style="color: #00ffd3;"><a href="./index.html">Logo</a></h2>
+                        <h2 onclick="enableLoading()" id="mobile_logo"
+                            class="text-white text-3xl"
+                            style="color: #00ffd3;"><a href="./index.html"><i
+                                    class="fa fa-slack animate-spin"></i></a></h2>
                     </div>
-                    <div class="flex-2 pr-4 pt-4" onclick="toggleNav()">
+                    <br />
+                    <div class="flex-2 pr-4 pt-4" onclick="toggleNav_Home()">
                         <i id="bar_icon" class="fa fa-bars text-white text-2xl"
                             style="font-size: 30px;"></i>
                     </div>
@@ -71,31 +83,46 @@
                 <div id="mobile_nav_items">
                     <!--Nav items :start-->
                     <ul class="text-white pl-12">
-                        <li>
+                        <li onclick="enableLoading()">
                             <a href="./about.html">About</a>
                         </li>
-                        <li>
-                            <a>Skills</a>
+                        <li onclick="enableLoading()">
+                            <a href="./skills.html">Skills</a>
                         </li>
-                        <li>
-                            <a>Work</a>
+                        <li onclick="enableLoading()">
+                            <a href="./work.html">Work</a>
                         </li>
-                        <li>
-                            <a>Contact</a>
+                        <li onclick="enableLoading()">
+                            <a href="./contact.html">Contact</a>
                         </li>
                     </ul>
                     <!--Nav items :end-->
                     <!--Social icons :start-->
                     <div class="icon_mob text-2xl" style="position:
                         absolute;bottom:0px;width: 100%;height: 200px;">
-                        <i style="position: absolute; top:100px;left:100px;
-                            z-index: 10;" class="fa fa-facebook text-white"></i>
-                        <i style="position: absolute; top:75px;left:150px;
-                            z-index: 10;" class="fa fa-linkedin text-white"></i>
-                        <i style="position: absolute; top:75px;left:210px;
-                            z-index: 10;" class="fa fa-whatsapp text-white"></i>
-                        <i style="position: absolute; top:98px;left:265px;
-                            z-index: 10;" class="fa fa-github text-white"></i>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100007454013243"
+                            target="_blank"><i
+                                id="facebook" style="position: absolute;
+                                top:100px;left:100px;
+                                z-index: 10;" class="fa fa-facebook text-white"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/shubham-kumar-494418164/"
+                            target="_blank"><i
+                                id="linkedin" style="position: absolute;
+                                top:75px;left:150px;
+                                z-index: 10;" class="fa fa-linkedin text-white"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=918018439472"
+                            target="_blank"><i
+                                id="whatsapp" style="position: absolute;
+                                top:75px;left:210px;
+                                z-index: 10;" class="fa fa-whatsapp text-white"></i></a>
+                        <a href="https://github.com/imshubhamcodex"
+                            target="_blank"><i
+                                id="github" style="position: absolute;
+                                top:98px;left:265px;
+                                z-index: 10;" class="fa fa-github text-white"></i></a>
                     </div>
                     <!--Social icons :end-->
                     <!--Circle :start-->
@@ -122,7 +149,8 @@
 
                         <span class="nav_text font-bold text-2xl
                             tracking-tight ml-2 mr-8" style="color:rgb(100, 255,
-                            218); cursor: pointer;"><a href="./index.html">Logo</a>
+                            218); cursor: pointer;"><a href="./index.html"><i
+                                    class="fa fa-code text-4xl"></i></a>
                         </span>
 
                     </div>
@@ -136,19 +164,19 @@
                                 text-white mr-6">
                                 About
                             </a>
-                            <a href="#responsive-header" class="nav_text
+                            <a href="./skills.html" class="nav_text
                                 block
                                 mt-4 lg:inline-block lg:mt-0
                                 text-white mr-6">
                                 Skills
                             </a>
-                            <a href="#responsive-header" class="nav_text
+                            <a href="./work.html" class="nav_text
                                 block
                                 mt-4 lg:inline-block lg:mt-0
                                 text-white mr-6">
                                 Work
                             </a>
-                            <a href="#responsive-header" class="nav_text
+                            <a href="./contact.html" class="nav_text
                                 block
                                 mt-4 lg:inline-block lg:mt-0
                                 text-white mr-6">
@@ -186,22 +214,33 @@
                 <div id="social">
                     <div>
                         <ul>
-                            <li><a class="flex align-items-center
+                            <li><a
+                                    href="https://www.facebook.com/profile.php?id=100007454013243"
+                                    target="_blank" class="flex
+                                    align-items-center
                                     text-white pb-2"><span>━━━</span><i
                                         class="fa fa-facebook
                                         text-white"></i></a>
                             </li>
-                            <li><a class="flex align-items-center
+                            <li><a
+                                    href="https://www.linkedin.com/in/shubham-kumar-494418164/"
+                                    target="_blank" class="flex
+                                    align-items-center
                                     text-white pb-2">━━━<i class="fa
                                         fa-linkedin
                                         text-white"></i></a>
                             </li>
-                            <li><a class="flex align-items-center
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=918018439472"
+                                    target="_blank" class="flex
+                                    align-items-center
                                     text-white pb-2">━━━<i class="fa
                                         fa-whatsapp
                                         text-white"></i></a>
                             </li>
-                            <li><a class="flex align-items-center
+                            <li><a href="https://github.com/imshubhamcodex"
+                                    target="_blank" class="flex
+                                    align-items-center
                                     text-white">━━━<i class="fa fa-github
                                         text-white"></i></a>
                             </li>
@@ -217,8 +256,10 @@
                         beautiful interfaces
                     </p>
                     <br>
-                    <p id="lets_work">LET’S WORK TOGETHER <span
-                            class="text-xl pl-3 animate-pulse text-white"> ➤</span>
+                    <a href="./contact.html" onclick="enableLoading()"><p
+                            id="lets_work">LET’S WORK
+                            TOGETHER <span
+                                class="text-xl pl-3 animate-pulse text-white"> ➤</span></a>
                     </p>
                 </div>
                 <!--Circle text :end-->
