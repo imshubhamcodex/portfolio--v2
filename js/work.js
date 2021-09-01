@@ -6,6 +6,7 @@ if (screen.width < 500) {
   document.getElementById("blog_img").src = "./img/blog_mob.PNG";
   document.getElementById("provider_img").src = "./img/provider_mob.PNG";
   document.getElementById("weather_img").src = "./img/weather_mob.PNG";
+  document.getElementById("h-care_img").src = "./img/h_care_mob.PNG";
 }
 
 function noGithub() {
